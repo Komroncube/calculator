@@ -8,8 +8,10 @@ class Win(QWidget):
     def __init__(self):
         super(Win, self).__init__()
         self.setWindowTitle("Calculator")
-        self.setWindowIcon(QIcon(QPixmap("D:\\KOMRON\\Najot_ta'lim\\python\\home13(pyqt5)\\calc.png")))
-        self.resize(600,600)
+        #adressni to'g'irlash kerak
+        self.setWindowIcon(QIcon(QPixmap("./icon-calc.png")))
+        self.setMaximumSize(600,600)
+        self.setMinimumSize(600,600)
         self.move(400,200)
         self.setFont(QFont("Times New Roman", 24))
         self.isonoff=False
